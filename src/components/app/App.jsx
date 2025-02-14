@@ -1,9 +1,14 @@
-function App() {
+import { Routes, Route } from "react-router-dom";
+import { Home } from "../../pages/Home";
+import { Recipe } from "../../pages/Recipe";
+
+const App = () => {
     return (
-        <>
-            <h1 className="m-4 text-danger">Hello, World!</h1>
-        </>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/recipes/:id" element={<Recipe />} />
+        </Routes>
     );
-}
+};
 
 export default App;
