@@ -5,9 +5,7 @@ export const Recipes = () => {
     const { recipesData, isLoading } = useGlobalContext();
 
     if (!recipesData) return;
-    if (isLoading) {
-        return <div>Loading...</div>;
-    }
+    if (isLoading) return <p className="text-center my-3 h1 ">Loading...</p>;
 
     return (
         <>

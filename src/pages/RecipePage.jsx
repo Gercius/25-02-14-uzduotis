@@ -6,7 +6,7 @@ export const RecipePage = () => {
     const { id } = useParams();
     const { isLoading, error, recipesData } = getRecipe(`lookup.php?i=${id}`);
 
-    if (isLoading) return <h1 className="text-center">Loading...</h1>;
+    if (isLoading) return <p className="text-center my-3 h1 ">Loading...</p>;
 
     if (error.show) {
         return (
