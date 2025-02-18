@@ -16,8 +16,6 @@ export const getRecipe = (urlParams) => {
             const response = await fetch(url);
             const data = await response.json();
 
-            console.log(data);
-
             if (!response.ok) {
                 throw new Error(`Response status: ${response.status}`);
             }
