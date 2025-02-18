@@ -1,0 +1,24 @@
+img {
+    max-width: 100%;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1280px !important;
+}
+
+.recipePage {
+    max-width: 1000px;
+}
+
+.recipePage img {
+    max-width: 600px;
+    width: 100%;
+}
